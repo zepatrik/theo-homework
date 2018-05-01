@@ -4,7 +4,9 @@ import json
 import sys
 import os
 
-with open(os.path.join(os.path.dirname(os.path.abspath(sys.argv[0])), 'config.json'), 'r') as f:
+configJson = os.path.join(os.path.dirname(os.path.abspath(sys.argv[0])), 'config.json')
+
+with open(configJson, 'r') as f:
     config = json.loads(f.read())
 
 
@@ -29,7 +31,7 @@ def login():
 
     config['PHP_COOKIE'] = r.cookies['PHPSESSID']
 
-    with open('./config.json', 'w') as f:
+    with open(configJson, 'w') as f:
         f.write(json.dumps(config))
 
 
