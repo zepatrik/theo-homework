@@ -1,4 +1,5 @@
 #!/bin/python2
+import os
 
 
 def get_main(task):
@@ -11,8 +12,8 @@ def get_main(task):
     }[task]
 
 
-def get_files(task, prefix=''):
-    automaton_common = lambda x: [prefix + a for a in
+def get_files(task, path=''):
+    automaton_common = lambda x: [os.path.join(path, a) for a in
                                   ['State.java', 'Transition.java', 'DFA.java', 'NFA.java', 'EpsilonNFA.java',
                                    'Parser.java', x]]
     return automaton_common(get_main(task) + '.java')
