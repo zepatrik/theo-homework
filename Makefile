@@ -14,10 +14,17 @@ submit3a:
 	cd ./homework3/src ;\
 	python3 ./../../submit.py 6 7 ./State.java ./Transition.java ./DFA.java ./NFA.java ./EpsilonNFA.java ./Parser.java ./IsFinite.java
 
+test3a:
+	cd ./homework3 ;\
+	python3 ../test.py 3a ./out ./src ./tests/a
+
 submit3b:	
 	cd ./homework3/src ;\
 	python3 ./../../submit.py 6 8 ./State.java ./Transition.java ./DFA.java ./NFA.java ./EpsilonNFA.java ./Parser.java ./IsEmpty.java
 
+test3b:
+	cd ./homework3 ;\
+	python3 ../test.py 3b ./out ./src ./tests/b
 
 submit3c:	
 	cd ./homework3/src ;\
