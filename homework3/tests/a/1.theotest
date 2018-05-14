@@ -1,0 +1,9 @@
+DFA
+Alphabet: a
+States: s0
+Init: s0
+Final: s0
+Transitions:
+s0;a;s0
+END
+Answer: false

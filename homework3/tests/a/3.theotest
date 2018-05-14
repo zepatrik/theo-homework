@@ -1,0 +1,14 @@
+DFA
+Alphabet: a;b
+States: p;q;r
+Init: p
+Final: q
+Transitions:
+p;a;p
+p;b;q
+q;a;r
+q;b;r
+r;a;r
+r;b;r
+END
+Answer: false

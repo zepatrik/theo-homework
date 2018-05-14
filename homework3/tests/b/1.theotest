@@ -1,0 +1,10 @@
+DFA
+Alphabet: a
+States: s0;s1
+Init: s0
+Final: s1
+Transitions:
+s0;a;s0
+s1;a;s1
+END
+Answer: true
