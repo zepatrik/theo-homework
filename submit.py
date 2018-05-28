@@ -3,6 +3,7 @@ import requests
 import json
 import sys
 import os
+from getFiles import get_files
 
 configJson = os.path.join(os.path.dirname(os.path.abspath(sys.argv[0])), 'config.json')
 
@@ -40,7 +41,7 @@ def submit():
         login()
 
     url = 'https://judge.in.tum.de/theo/team/upload.php'
-    files = map(lambda f: ('code[]', (f, open(f, 'rb'))), sys.argv[3:])
+    files = map(lambda f: ('code[]', (f, open(f, 'rb'))), get_files(sys.argv[3], './'))
     data = {
         'probid': sys.argv[2],
         'langid': 'java',

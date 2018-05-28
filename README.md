@@ -3,6 +3,8 @@ A repo to use as a skeleton for your THEO homework with a view helping scripts.
 
 The scripts can be used with any other project structure as well, have a look below for a quick explanation.
 
+Other good resource for tips: [Google docs](https://docs.google.com/document/d/1me3dK3EHwz_PLjuqX0U1oV0P3YCuCVVKlTvBIvKF7A8/edit)
+
 ## submit.py
 Submits files to TUMJudge
 

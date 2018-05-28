@@ -38,3 +38,15 @@ submit3e:
 	cd ./homework3/src ;\
 	python3 ./../../submit.py 6 11 ./State.java ./Transition.java ./DFA.java ./NFA.java ./EpsilonNFA.java ./Parser.java ./Equivalent.java
 
+submit4a:
+	cd ./homework4/src ;\
+	python3 ./../../submit.py 7 12 4a
+
+submit4b:
+	cd ./homework4/src ;\
+	python3 ./../../submit.py 7 13 4b
+
+submit4c:
+	cd ./homework4/src ;\
+	python3 ./../../submit.py 7 14 4b
+

@@ -21,14 +21,16 @@ def run_tests(task, out_path='out', src_path='src', test_path='test'):
             with open(os.path.join(test_path, fn), 'r') as f:
                 test_case = f.read().split('\n')
                 answer = test_case.pop()
-                p = run(['java', get_main(task)], cwd=out_path, input='\n'.join(test_case)+'\n', stdout=PIPE, universal_newlines=True)
+                p = run(['java', get_main(task)], cwd=out_path, input='\n'.join(test_case) + '\n', stdout=PIPE,
+                        universal_newlines=True)
 
                 if answer.startswith(answ_linestart):
                     output = str(p.stdout)[:-1]
                     if output == answer[len(answ_linestart):]:
                         print(f'{Fore.GREEN}pass {fn}{Style.RESET_ALL}')
                     else:
-                        print(f'{Fore.RED}fail {fn}: expected {answer[len(answ_linestart):]}, got {output}{Style.RESET_ALL}')
+                        print(
+                            f'{Fore.RED}fail {fn}: expected {answer[len(answ_linestart):]}, got {output}{Style.RESET_ALL}')
 
 
 run_tests(*sys.argv[1:])
