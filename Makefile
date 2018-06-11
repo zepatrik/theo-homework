@@ -50,3 +50,23 @@ submit4c:
 	cd ./homework4/src ;\
 	python3 ./../../submit.py 7 14 4b
 
+submit5a:
+	cd ./homework5/src ;\
+	python3 ./../../submit.py 11 15 5a
+
+submit5b:
+	cd ./homework5/src ;\
+	python3 ./../../submit.py 11 16 5b
+
+submit5c:
+	cd ./homework5/src ;\
+	python3 ./../../submit.py 11 17 5c
+
+submit5d:
+	cd ./homework5/src ;\
+	python3 ./../../submit.py 11 18 5d
+
+submit5e:
+	cd ./homework5/src ;\
+	python3 ./../../submit.py 11 22 5e
+
