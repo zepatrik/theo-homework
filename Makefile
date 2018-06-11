@@ -48,7 +48,7 @@ submit4b:
 
 submit4c:
 	cd ./homework4/src ;\
-	python3 ./../../submit.py 7 14 4b
+	python3 ./../../submit.py 7 14 4c
 
 submit5a:
 	cd ./homework5/src ;\
