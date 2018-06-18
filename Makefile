@@ -70,3 +70,19 @@ submit5e:
 	cd ./homework5/src ;\
 	python3 ./../../submit.py 11 22 5e
 
+submit6a:
+	cd ./homework6/src ;\
+	python3 ./../../submit.py 12 23 6a
+
+submit6b:
+	cd ./homework6/src ;\
+	python3 ./../../submit.py 12 24 6b
+
+submit6c:
+	cd ./homework6/src ;\
+	python3 ./../../submit.py 12 25 6c
+
+submit6d:
+	cd ./homework6/src ;\
+	python3 ./../../submit.py 12 26 6d
+
