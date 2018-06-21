@@ -16,7 +16,7 @@ public final class ToEpsilon {
     }
   }
 
-  public static <S> EpsilonNFA<ProductState<S>> toEpsilonNFA(TuringMachine<S> tm) {
+  public static <S> EpsilonNFA<?> toEpsilonNFA(TuringMachine<S> tm) {
     // TODO
   }
 }
